@@ -1,0 +1,6 @@
+UserName: ['15996293871','17620042808']
+UserPwd: ['hanbing11111','hanbing11111']
+OPPOHost: https://www.oppo.com/cn/
+
+# 如果要用selenium gird,那么就配remote_url，要用自己本地则不配
+#remote_url: http://192.168.0.188:4444

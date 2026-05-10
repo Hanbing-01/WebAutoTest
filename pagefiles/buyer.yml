@@ -1,0 +1,22 @@
+HomePage:
+  点击个人选项卡: {"name":"点击个人选项卡","type":"css","value":".op-trk-event.fill","timeout":5}
+  点击登录: {"name":"点击登录","type": "css", "value": ".sign-in.op-trk-event", "timeout": 15}
+  进入OPPO商城: {"name": "进入OPPO商城", "type": "xpath", "value": '//span[text()="官方商城"]', "timeout": 5}
+Login_Page:
+  手机号输入框: {"name": "手机号输入框", "type": "css", "value": 'input[placeholder*="请输入手机号"]:first-of-type', "timeout": 15}
+  密码输入框: {"name": "密码输入框", "type": "css", "value": 'input[placeholder*="请输入密码"]:first-of-type',"timeout": 5}
+  登录: {"name": "登录", "type": "css", "value": ".uc-motion-effect__change__item", "timeout": 5}
+  登录按钮: {"name":"登录按钮","type":"xpath","value":'(//button[@class="form-sub"])[2]',"timeout":5}
+  同意并继续: {"name": "同意并继续", "type": "xpath", "value": '(//*[text()="同意并继续"])', "timeout": 5}
+Oppo_Shop:
+  点击搜索框: {"name":"点击搜索框","type": "xpath", "value": "//input[@placeholder='OPPO好物狂欢节'][1]", "timeout": 5}
+  立即抢购: {"name":"立即抢购","type": "css", "value": ".swiper-slide-active a", "timeout": 10}
+Phone_Details:
+  点击同意: {"name":"点击同意","type": "xpath", "value": "//*[contains(text(),'同意')]/ancestor::button", "timeout": 5}
+  关闭cookie提示: {"name":"关闭cookie提示","type": "css", "value": '.v-icon.notranslate.close-icon.close.v-icon--link.mdi.mdi-window-close.theme--light', "timeout": 5}
+  选择青色: {"name":"选择青色","type": "xpath", "value": '//*[text()="乘风青"]/ancestor::button', "timeout": 5}
+  选择白色: {"name":"选择白色","type": "xpath", "value": '//*[text()="自在白"]/ancestor::button', "timeout": 5}
+  选择12GB: {"name":"选择12GB","type": "xpath", "value": '//*[text()="12GB+256GB"]/ancestor::button', "timeout": 5}
+  选择16GB: {"name":"选择16GB","type": "xpath", "value": '//*[text()="16GB+512GB"]/ancestor::button', "timeout": 5}
+  选择其他: {"name":"选择其他","type": "xpath", "value": '//span[contains(text(), "买 1 年送 1 年")] / ancestor::button', "timeout": 5}
+  立即购买: {"name":"立即购买","type": "xpath", "value": '//*[text() = "立即购买"] / ancestor::button', "timeout": 5}
