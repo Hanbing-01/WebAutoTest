@@ -1,0 +1,5 @@
+.pytest_cache
+logs
+report/data
+result.yml
+.idea/
