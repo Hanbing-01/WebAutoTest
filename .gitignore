@@ -1,5 +1,11 @@
-.pytest_cache
-logs
 report/data
 result.yml
 .idea/
+# Python 缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.idea/
+logs/
