@@ -3,4 +3,4 @@ UserPwd: ['hanbing11111','hanbing11111']
 OPPOHost: https://www.oppo.com/cn/
 
 # 如果要用selenium gird,那么就配remote_url，要用自己本地则不配
-#remote_url: http://118.89.124.97:5444
+remote_url: http://118.89.124.97:5444
