@@ -8,11 +8,12 @@ import time
 
 from PIL import Image
 from common.driver import DriverOperate
-from common.file_load import load_yaml_file
+from common.file_load import load_yaml_file, write_yaml
 from common.logger import GetLogger
 from actions.user_login_action import User_Login_Action
 from paths_manager import project_path, common_yaml
 
+GLOBAL_START_TIME = time.time()
 
 def pytest_collection_modifyitems(config:"Config",items:List["Item"]):
     # items对象是pytest收集到的所有用例对象
@@ -169,3 +170,14 @@ def shot(dr,worker_id):
             i+=1
         except:
             return
+
+def pytest_terminal_summary(terminalreporter, exitstatus, config):
+    """统计测试结果"""
+    passed = len(terminalreporter.stats.get('passed', []))
+    failed = len(terminalreporter.stats.get('failed', []))
+    error = len(terminalreporter.stats.get('error', []))
+    skipped = len(terminalreporter.stats.get('skipped', []))
+    total = passed+failed+error+skipped
+    duration = time.time() - GLOBAL_START_TIME
+    print('total times:', duration, 'seconds')
+    write_yaml('result.yml',{"total":total,"passed":passed,"failed":failed,"skipped":skipped,"error":error})
