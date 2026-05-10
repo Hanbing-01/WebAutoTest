@@ -100,7 +100,7 @@ class DriverOperate:
             return element
         except BaseException as e:
             self.logger.exception(f'定位元素【{name}】,通过【{type}】,值是【{value}】,定位失败')
-            raise BaseException(f'定位元素【{name}】,通过【{type}】,值是【{value}】,定位失败:{e}')
+            # raise BaseException(f'定位元素【{name}】,通过【{type}】,值是【{value}】,定位失败:{e}')
 
     def find_elements(self,ele_info):
         # ele_info = {"name":"登录链接","type":"linktext","value":"登录","timeout":5}
@@ -118,7 +118,7 @@ class DriverOperate:
             return element_list
         except BaseException as e:
             self.logger.exception(f'定位元素【{name}】,通过【{type}】,值是【{value}】,定位失败')
-            raise BaseException(f'定位元素【{name}】,通过【{type}】,值是【{value}】,定位失败:{e}')
+            # raise BaseException(f'定位元素【{name}】,通过【{type}】,值是【{value}】,定位失败:{e}')
     def get_by(self,ele_info):
         name = ele_info['name']
         type = ele_info['type']
