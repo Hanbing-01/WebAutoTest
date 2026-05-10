@@ -1,7 +1,5 @@
 BUY_PHONE:
   colors:
     - green
-    - white
   versions:
     - 12GB
-    - 16GB

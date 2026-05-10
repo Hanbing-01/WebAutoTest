@@ -171,6 +171,17 @@ def shot(dr,worker_id):
         except:
             return
 
+# def pytest_terminal_summary(terminalreporter, exitstatus, config):
+#     """统计测试结果"""
+#     passed = len(terminalreporter.stats.get('passed', []))
+#     failed = len(terminalreporter.stats.get('failed', []))
+#     error = len(terminalreporter.stats.get('error', []))
+#     skipped = len(terminalreporter.stats.get('skipped', []))
+#     total = passed+failed+error+skipped
+#     duration = time.time() - GLOBAL_START_TIME
+#     print('total times:', duration, 'seconds')
+#     write_yaml('result.yml',{"total":total,"passed":passed,"failed":failed,"skipped":skipped,"error":error})
+
 def pytest_terminal_summary(terminalreporter, exitstatus, config):
     """统计测试结果"""
     passed = len(terminalreporter.stats.get('passed', []))
